@@ -4,11 +4,16 @@ const display = document.getElementById("display");
     let operand1 = null;
     let resultDisplayed = false;
 
+
     function updateDisplay(value) {
-      display.classList.remove("fade-in");
-      void display.offsetWidth; // trigger reflow
-      display.textContent = value;
-      display.classList.add("fade-in");
+      const stringValue = value.toString();
+
+  // Limit to 12 characters max, with ellipsis if too long
+      if (stringValue.length > 12) {
+        display.textContent = stringValue.slice(0, 12);
+      } else {
+        display.textContent = stringValue;
+      }
     }
 
     function clear() {
