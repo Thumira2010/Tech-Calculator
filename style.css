@@ -73,14 +73,14 @@ body {
   overflow: hidden;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
   text-overflow: ellipsis;
   transition:background-color 0.3s ease;
   transition: font-size 0.2s ease;
 }
 
 .display::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 .buttons {
@@ -154,7 +154,6 @@ body {
   }
 }
 
-/* START OF NEW RESPONSIVE ENHANCEMENTS */
 .calculator {
   width: 100%;
   max-width: 400px;
@@ -217,4 +216,3 @@ body {
     width: 350px;
   }
 }
-/* END OF NEW RESPONSIVE ENHANCEMENTS */
