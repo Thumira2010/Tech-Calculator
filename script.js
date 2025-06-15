@@ -8,7 +8,6 @@ const display = document.getElementById("display");
     function updateDisplay(value) {
       const stringValue = value.toString();
 
-  // Limit to 12 characters max, with ellipsis if too long
       if (stringValue.length > 12) {
         display.textContent = stringValue.slice(0, 12);
       } else {
