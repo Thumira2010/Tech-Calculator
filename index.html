@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Calculator</title>
+  <title>Tech Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
     <div class="display" id="display">0</div>
     <div class="buttons">
       <button class="btn" data-action="clear">C</button>
-      <button class="btn" disabled></button>
-      <button class="btn" disabled></button>
+      <button class="btn" data-action="backspace">⌫</button>
+      <button class="btn operator" data-operator="%">%</button>
       <button class="btn operator" data-operator="/">÷</button>
 
       <button class="btn number" data-number="7">7</button>
@@ -31,7 +31,13 @@
       <button class="btn operator" data-operator="+">+</button>
 
       <button class="btn number zero" data-number="0">0</button>
+      <button class="btn number" data-number=".">.</button>
       <button class="btn" data-action="equals">=</button>
+    </div>
+
+    <div class="footer">
+      <span>Mode:</span>
+      <button class="mode-toggle">Toggle Dark</button>
     </div>
   </div>
 
